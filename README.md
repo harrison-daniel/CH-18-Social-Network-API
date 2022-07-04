@@ -43,8 +43,8 @@ https://user-images.githubusercontent.com/99782685/177068088-3eeb6e2f-a188-4eca-
 
 The second animation shows GET routes to return a single user and a single thought being tested in Insomnia:
 
+https://user-images.githubusercontent.com/99782685/177070540-10074550-91be-449c-b7e1-b0c9e5c44102.mp4
 
-https://user-images.githubusercontent.com/99782685/177068349-750c9821-ed6c-405c-b4f9-3fc746ab3586.mp4  
 
 
 The third animation shows the POST, PUT, and DELETE routes for users being tested in Insomnia:
@@ -59,6 +59,10 @@ Your walkthrough video should also show the POST, PUT, and DELETE routes for tho
 
 
 The final animation shows the POST and DELETE routes for a user's friend list being tested in Insomnia:
+
+
+https://user-images.githubusercontent.com/99782685/177071124-194ae7f1-5568-48ba-99d5-5385b4c6ac44.mp4
+
 
 
 
