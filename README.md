@@ -50,7 +50,11 @@ https://user-images.githubusercontent.com/99782685/177070540-10074550-91be-449c-
 The third animation shows the POST, PUT, and DELETE routes for users being tested in Insomnia:
 
 
-https://user-images.githubusercontent.com/99782685/177068676-d5290b98-89ac-4dbc-b835-4c7b95597070.mp4
+
+
+https://user-images.githubusercontent.com/99782685/177071259-0969b9c0-8683-4fa9-aac8-492c6bb93ba3.mp4
+
+
 
 
 
