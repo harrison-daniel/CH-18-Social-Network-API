@@ -1,4 +1,5 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model, Types } = require('mongoose');
+const dateFormat = require('../utils/dateFormat');
 
 const ThoughtSchema = new Schema(
   {
@@ -11,7 +12,9 @@ const ThoughtSchema = new Schema(
 
     createdAt: {
       type: Date,
-      default: Date.now
+      default: Date.now,
+      //USe a getter method to format the timestamp on query
+      get: createdAtVal => dateFormat(createdAtVal)
     },
 
     username: {
@@ -19,21 +22,57 @@ const ThoughtSchema = new Schema(
       required: 'Username is Required',
     },
 
-    reactions: [ReactionSchema],
+    // reactions: [ReactionSchema],
 
   },
   {
     toJSON: {
-      virtuals: true
+      virtuals: true,
+      getters: true
     },
     id: false
   }
 );
 
-// get username from email
-// UserSchema.virtual('username').get(function() {
-//   return this.email.slice(0, this.email.indexOf('@'));
-// });
+const ReactionSchema = new Schema(
+  {
+    reactionId:{
+        type: Schema.Types.ObjectId,
+        default: () => new Types.ObjectId()
+      },
+
+    reactionBody: {
+      type: String,
+      required: true,
+      minlength: 1,
+      maxlength: 280
+    },
+
+    username: {
+      type: String,
+      required: true,
+    },
+
+    createdAt: {
+      type: Date,
+       // set default value to the current timestamp
+      default: Date.now,
+      //USe a getter method to format the timestamp on query
+      get: createdAtVal => dateFormat(createdAtVal)
+    },
+
+  },
+  {
+    toJSON: {
+      // virtuals: true,
+      getters: true
+    },
+    id: false
+  }
+);
+
+
+
 
 // Create a virtual called reactionCount that retreives the length of the thought's reactions array field on query
 

@@ -1,16 +1,5 @@
 # CH-18-Social-Network-API
 
-<!-- Project Logo -->
-<!-- <div align="center">
-    <p>
-        <a href='' target='_blank'>
-            <img size='80px' alt='' src=''/>
-        </a>
-    </p>
-</div> -->
-
-<!-- --- -->
-
 # Table of Contents
 
 - [Purpose](#purpose)

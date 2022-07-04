@@ -1,5 +1,7 @@
 const { Schema, model } = require('mongoose');
 
+
+
 const UserSchema = new Schema(
   {
     username: {
@@ -19,34 +21,27 @@ const UserSchema = new Schema(
     thoughts: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'ThoughtArray'
+        ref: 'Thought'
       }
     ],
 
     friends: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'UserArray'
+        ref: 'User'
       }
     ],
 
-    userCreated: {
-      type: Date,
-      default: Date.now
-    }
   },
   {
     toJSON: {
-      virtuals: true
+      virtuals: true,
+      getters: true
     },
     id: false
   }
 );
 
-// get username from email
-// UserSchema.virtual('username').get(function() {
-//   return this.email.slice(0, this.email.indexOf('@'));
-// });
 
 // Create a virtual called friendCount that retreives the length of the user's friends array field on query
 

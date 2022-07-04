@@ -4,14 +4,12 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// ?? User or Index?
-// const { User } = require('./models');
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('public'));
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/social-network-api',
+  process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/socialdb',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
