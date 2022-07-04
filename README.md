@@ -6,9 +6,7 @@
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Demo](#demo)
-- [Built With](#built-with)
 - [Contributors](#contributors)
-- [License](#license)
 
 # Purpose
 
@@ -40,22 +38,33 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 The first animation shows GET routes to return all users and all thoughts being tested in Insomnia:
 
+https://user-images.githubusercontent.com/99782685/177068088-3eeb6e2f-a188-4eca-90ee-a5b5035090ff.mp4  
+
+
 The second animation shows GET routes to return a single user and a single thought being tested in Insomnia:
+
+
+https://user-images.githubusercontent.com/99782685/177068349-750c9821-ed6c-405c-b4f9-3fc746ab3586.mp4  
+
 
 The third animation shows the POST, PUT, and DELETE routes for users being tested in Insomnia:
 
+
+https://user-images.githubusercontent.com/99782685/177068676-d5290b98-89ac-4dbc-b835-4c7b95597070.mp4
+
+
+
 Your walkthrough video should also show the POST, PUT, and DELETE routes for thoughts being tested in Insomnia:
+
+
 
 The final animation shows the POST and DELETE routes for a user's friend list being tested in Insomnia:
 
+
+
 Your walkthrough video shuold also show the POST and DELETE routes for reactions to thoughts being tested in Insomnia:
 
-# Built With
 
-<ul>
-<li></li>
-
-</ul>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -65,8 +74,11 @@ Your walkthrough video shuold also show the POST and DELETE routes for reactions
 
 Harrison Daniel https://github.com/harrison-daniel
 
-# License
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ---
+
+
+
+
